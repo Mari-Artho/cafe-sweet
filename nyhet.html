@@ -1,0 +1,74 @@
+<!DOCTYPE html><!--Deklaration HTML5-->
+<html lang="sv"><!--Välj language-->
+  <head>
+  	<meta charset="utf-8"><!--För att charakter-->
+    <meta name="description" content="Konditori Sött&Elegant"><!--En beskrivning av denna sida. Den del som visas med sidrubriken i sökmotorn. Skriv nyckelord.-->
+  	<meta name="viewport" content="width=device-width  initial-scale=1.0"><!--Behöver till använda Media-query-->
+
+    <title>Konditori Sött&Elegant</title><!--Title-->
+  	
+  	<link type="text/css" rel="stylesheet" href="style.css"><!--Deklaration för använda css -->
+  	<link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--För att använda Google font-->
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"><!--För att använda Google font-->
+  </head>
+
+  <body>
+      <main>
+          <header id="nyhet_image"><!--insert background image in the 'header'-->
+              <h1 class="nyhet_text">Nyhet</h1>
+              <!--class is change color due to the bg-picture is too white-->
+          </header>
+
+          <nav id="link1"><!--Link to go to of the page-->
+            <ul><!--List of navigation-->
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="nyhet.html" class="current">Nyhet</a></li>
+              <li><a href="meny.html">Meny</a></li>
+              <li><a href="wedding.html">Bröllop</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        
+
+      <hr>　<!--border-->
+
+      <div id="nyhet_contents"><!--id för att flex-box(parents)-->
+        <article id="container"><!--id för att flex-box(child and media query)-->
+          <div id="item1" class="item1"><!--flex-box's item-->
+            <h2>Ny höst meny</h2>
+            <img src="images/lemoncake2.jpg" alt="lemoncake"><!--Infoga images-->
+            <p>Det är en citronkaka med färsk citron. En fluffig maräng är ovanpå en vaniljsås gjord av färska ägg.</p>
+          </div>
+
+          <div id="item2" class="item2" ><!--id för att flex-box(child)-->
+            <h2>Om vår trädgård</h2>
+            <img src="images/gardencafe2.jpg" alt="garden"><!--Infoga images-->
+            <p>Vi har skapat en ny trädgård. Du kan njuta av kakor och kaffe mitt i träden.<br> Välkommen.</p>
+          </div>
+
+          <div id="item3" class="item3" ><!--id för att flex-box(child)-->
+            <h2>Nya kakor</h2>
+            <img src="images/chococandy2.jpg" alt="chococandy"><!--Infoga images-->
+            <p>Vilken härlig chokladkaka! Det är sött och gott. Det här är en sötsak som både barn och vuxna älskar! Kom försök!</p>
+          </div>
+        </article>
+
+        <aside id="nyhet_aside"><!--side bar-->
+          <ul><!--List of the side bar-->
+            <li><a href="#item1">Ny höst meny</a></li><!--a href är link. Linken är hoppa till Ny höst meny-->
+            <li><a href="#item2">Om vår trädgård</a></li><!--link är hoppa till Om vår trädgård-->
+            <li><a href="#item3">Nya kakor</a></li><!--link är hoppa till Nya kakor-->
+          </ul>
+          <img class="table" src="images/tableflower.jpg" alt="tablesetting"><!--Om jag inte gör en class tag, ändras foton på andra html sheets.-->
+        </aside>
+      </div> <!--nyhet_contents-->
+
+      <P class="link_top"><a href="#link1">Gå till TOP</a></P><!--Link to top-->
+
+     </main>
+
+    <footer><small>Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+   
+  </body>
+
+</html>

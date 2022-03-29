@@ -1,0 +1,56 @@
+<!DOCTYPE html><!--Deklaration-->
+<html lang="sv"><!--Välj language-->
+  <head><!--Användaren kan inte se i 'Header'-->
+  	<meta charset="utf-8"><!--För att charakter-->
+    <meta name="description" content="Konditori Sött&Elegant"><!--En beskrivning av denna sida. Den del som visas med sidrubriken i sökmotorn. Skriv nyckelord.-->
+  	<meta name="viewport" content="width=device-width  initial-scale=1.0"><!--Behöver till använda Media-query-->
+    <title>Konditori Sött&Elegant</title><!--Title-->
+  	<link type="text/css" rel="stylesheet" href="style.css"><!--Deklaration för använda css -->
+  	<link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--För att använda Google font-->
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"><!--För att använda Google font-->
+  </head>
+
+  <body><!--Vad jag skriver inuti kroppen visas på skärmen.-->
+    
+      <main>
+        <header id="bg_image"><!--insert background image in CSS-->
+          <div class="bg_mask"><!--För att göra bakgrundsbilden transparent med CSS.Det var vackrare att göra det transparent.-->
+            <h1 id="bg_text">Konditori Sött&Elegant</h1>
+          </div>
+        </header>
+
+      <nav><!--navigation-->
+        <ul><!--list-->
+          <li><a href="index.html" class="current">Hem</a></li><!--'current class är att sidan med användaren i navigeringen visas i blått'-->
+          <li><a href="nyhet.html">Nyhet</a></li>
+          <li><a href="meny.html">Meny</a></li>
+          <li><a href="wedding.html">Bröllop</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    
+
+      <hr>　<!--Border-->
+
+      <section id="section_one"><!--id behöver för css för att andra layout etc och flex(parents)-->
+        <article id="article_one"><!--flex(child)-->
+          <h2>Välkommen till Konditori Sött&Elegant</h2>
+          <p>Konditori Sött&Elegant av Östermalm i Stockholm är ett café som ger dig ett extra trädgård. Här kan du äta våra fantastisk tårta&kakor och träffa dina vänner på fika eller ett glas vin. På våra trädgård erbjuder vi en lokal för upp till 50 personer. Perfekt för mindre fester, konferenser och andra möten.Vi arrangerar allt från bröllop och konferenser. Vi ser fram emot att träffa er.Välkommen.</p>
+        </article>
+
+        <article id="article_two"><!--flex(child)-->
+        <h2>öppettider</h2> 
+        <p>Mån—Fre 7.30—20.00<br>Lör—Sön 10.00—18.00<br>Helgdagar 11.00-17.00</p>
+        <br>
+        <h2>Hitta hit</h2>
+        <p>Karlavägen 36, 114 49 Stockholm<br>08-1234-5678</p>
+        </article>
+      </section>
+    </main>
+
+    <footer><small>Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+
+    
+  </body>
+
+</html>

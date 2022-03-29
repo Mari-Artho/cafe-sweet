@@ -1,0 +1,80 @@
+<!DOCTYPE html><!--Deklaration-->
+<html lang="sv"><!--Välj language-->
+  <head>
+  	<meta charset="utf-8"><!--För att charakter-->
+    <meta name="description" content="Konditori Sött&Elegant"><!--En beskrivning av denna sida. Den del som visas med sidrubriken i sökmotorn. Skriv nyckelord.-->
+  	<meta name="viewport" content="width=device-width  initial-scale=1.0"><!--För att använda Media-query-->
+
+    <title>Konditori Sött&Elegant</title><!--Title-->
+  	
+  	<link type="text/css" rel="stylesheet" href="style.css"><!--Deklaration för använda css -->
+  	<link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--För att använda Google font-->
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"><!--För att använda Google font-->
+  </head>
+
+  <body>
+      <main>
+          <header id="wedding_image"><!--id är för att använda headers background image på css-->
+              <h1 class="wedding_text">Bröllop</h1><!--class är för att andra färg vit till svart-->
+          </header>
+
+          <nav id="link1"><!--Link bottom till top-->
+            <ul><!--list of the navigation-->
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="nyhet.html">Nyhet</a></li>
+              <li><a href="meny.html">Meny</a></li>
+              <li><a href="wedding.html" class="current">Bröllop</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+
+      <hr>　<!--border-->
+
+      <div id="wedding_all"><!--flex box(parents) for all pages-->
+        <div class="wedding_main"><!--class är för flex box(parents) för vänster på sidan. Furthermore för layout av text och foton till vänster på sidan-->
+          <h2 class="wedding_h2">Specialmeny</h2>
+          <p id="wedding_top">Vi har förberett en speciell bröllopstårta för din speciella dag. Elegant, underbart och gott. Vi kan dekorera ätbara blommor eller lägga till muffins om du vill. Vi kan också göra originalkakor åt dig. Kontakta oss gärna.</p>
+
+          <div class="wedding_menu"><!--flex-box(child)-->
+            <figure><!--<figure> tag är bekväm eftersom jag kan sätta ihop ett foto och en mening.-->
+              <img class="wedding_picture1" src="images/blueweddingcake.jpg" alt="blueweddingcake">
+              <figcaption>Vit princess bröllopstårta</figcaption>
+            </figure>
+            <figure>
+              <img class="wedding_picture2" src="images/rosecake.jpg" alt="rosecake"><!--Detta picture2 måste flyttas längre till vänster. Det behövde inte flytta picture1 till vänster.-->
+              <figcaption>Vit princess bröllopstårta & Muffins</figcaption>
+            </figure>
+          </div><!--Row 38wedding_menu close tab-->
+
+          <div class="wedding_garden" id="link2">
+            <h2 class="wedding_h2">Bröllop i trädgården</h2>
+            <p>Vår trädgård är omgiven av blommor och träd och skålar med härliga kakor och vin och champagne. Det är en fantastisk miljö att fira deras avresa.</p>
+              <img src="images/gardentable.jpg" alt="gardenteble">
+          </div><!--Row 45 wedding_garden-->
+
+          <div class="wedding_place" id="link3">
+            <h2 class="wedding_h2">Om bröllopssalen</h2>
+            <p>Inte bara trädgården utan också rummet är trevligt. Rummet är fullt av blommor och ljus. Massor av blommor på sommaren och levande ljus på vintern firar ditt jubileum.
+</p>
+              <img src="images/restaurant.jpg" alt="restaurant">
+          </div><!--Row49 wedding_garden close tab-->
+        </div><!--Row34 wedding_main close tab-->
+
+        <nav class="wedding_nav"><!--Klassen är CSS för vertikal navigation. Skapa en klass för att skilja den från navigering på andra sidor.-->
+          <ul>
+            <li><a href="#link1">Specialmeny</a></li>
+            <li><a href="#link2">Trädgården</a></li>
+            <li><a href="#link3">Bröllopssalen</a></li>
+          </ul>
+        </nav>
+      </div><!--Row 34 wedding_all-->
+
+      <P class="link_top"><a href="#link1">Gå till TOP</a></P><!--Link to top-->
+     </main>
+
+    <p id="cc_p">"Wedding Bouquet" by Juan Antonio Capó is licensed under CC BY 2.0 </p><!--CC licenced credit-->
+    <footer><small>Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+      
+  </body>
+
+</html>

@@ -1,0 +1,665 @@
+body {
+	position: relative;
+	/*Krävs för att fixa sidfoten längst ner på skärmen.(parents)*/
+	padding-bottom: 120px;/*←footer height*/
+   	box-sizing: border-box;/*Krävs för att fixa sidfoten längst ner på skärmen.*/
+}
+
+main{
+	width: 90%;/*I made the screen 90% and used a white
+	 background color and a pink background color to
+	 create a cute and elegant image in contrast.*/
+	margin: 0 auto;
+	font-family: "Roboto Condensed","Verdana", "Helvetica","sans-serif";
+	background-color: #ffe6ea;
+	font-size: 19px;
+}/*CSS för main area*/
+
+footer {
+	width: 100%;
+	text-align: center;
+	position: absolute;/*A child for a <body> tag
+	(parent). To fix the footer at the bottom of
+	the screen.*/
+    bottom: 0; /*To fix the footer at the bottom of
+	the screen.*/
+}
+
+h1{
+	font-family:'Sansita Swashed', cursive;
+	color: #ffffff;
+	font-size: 5em;
+	padding-top: 30px;
+	text-align: center;
+	}/*Decoration för att h1 area */
+
+h2, h3{
+	font-family:'Sansita Swashed', cursive;
+	font-size: 2em;
+} /*Decoration för att h2 area */
+
+.current {
+	color: #0000FF;
+}/*Sidan med användaren i navigeringen blir blå.
+ Vanligtvis svart.*/
+
+.item1 h2, .item2 h2, .item3 h2{
+	margin-bottom: 0;
+	margin-left: 10px;
+}/*Justera h2 item*/
+
+.item1 p, .item2 p, .item3 p {
+	padding-top: 0;
+	margin-top: 0;
+	margin-left: 10px;
+	width: 80%;
+}/*Justera class item h2 p*/
+
+#bg_image{
+	height: 75vh;/*When I set it to 100vh, even the
+	background of the navigation became a photo,
+	which was hard to see.*/
+	width: 100%;
+	justify-content: center;
+	color: #383B57;
+	background: url(images/blueweddingcake.jpg)
+				center top no-repeat
+				rgba(255,255,255,0.5);
+				/*För att transparency.Det var vacklare.*/
+	background-size:cover;
+	}/*sätta in background images på index.html*/
+
+#nyhet_image {
+	height: 75vh;
+	width: 100%;
+	justify-content: center;
+	color: #383B57;
+	background: url(images/pankaka.jpg)
+				center top no-repeat
+				rgba(255,255,255);
+	background-size:cover;
+} /*sätta in background images på nyhet.html*/
+
+#meny_image {
+	height: 75vh;
+	width: 100%;
+	justify-content: center;
+	background: url(images/berries2.jpg)
+				center top no-repeat
+				rgba(255,255,255);
+	background-size:cover;
+} /*sätta in background images på meny.html*/
+
+#wedding_image{
+	height: 75vh;
+	width: 100%;
+	justify-content: center;
+	background: url(images/flower_cc.jpg)
+				center top no-repeat
+				rgba(255,255,255,0.5);
+				/*För att transparency*/
+	background-size:cover;
+} /*sätta in background images på wedding.html*/
+
+#kontakt_image {
+	height: 75vh;
+	width: 100%;
+	justify-content: center;
+
+	background: url(images/giftbox.jpg)
+				center top no-repeat
+				rgba(255,255,255,0.5);
+				/*För att transparency*/
+	background-size:cover;
+} /*sätta in background images på kontakt.html*/
+
+.nyhet_text,.meny_text,.wedding_text,.kontakt_text {
+	color: #000000 ;
+}/*Textfärgen på h1 är vit, så jag använde 'class'
+ för att skilja den från h1 på dessa sidor.*/
+
+nav{
+	display: flex;
+	justify-content: center;
+} /*För att förändra nav tag till flex. alla sidan.*/
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0 0 0 0;
+}/*För att förändra nav ul list tag till flex*/
+
+nav ul li{
+	padding:20px;
+	margin-top: 0;
+	font-size: 30px;
+}/*Justera class nav ul list tag*/
+
+nav ul li a{
+	color: #000000;
+}/*Förändra link color*/
+
+aside ul, nav {
+	list-style-type: none;
+	font-family:'Sansita Swashed', cursive;
+	font-size: 1.5em;
+	margin: 10px 0 50px 0;
+}/*Justera aside area*/
+
+aside ul li{
+	color: #000000;
+}/*Förändra aside color*/
+
+hr{
+	margin: 0 0 0 0;
+	width: 100%;
+	border-color: #0205ab;
+	font-size: 4rem;
+}/*Förändra border area*/
+
+#section_one{
+	display: flex;
+	flex-direction: row;
+}/*index.html sheet.flex-box(parents)*/
+
+#article_one{
+	width: 65%;
+}/*index.html seet.flex-box(child)*/
+
+#article_one h2{
+	margin: 0 0 0 20px;
+}/*index.html. Förändra id article_one h2 area*/
+
+#article_one p{
+	margin: 10px 30px 20px 20px;
+}/*index.html. Förändra id article_one p area*/
+
+#article_two h2{
+	margin: 0 0 0 70px;
+}/*index.html. Förändra id article_two h2 area*/
+
+#article_two p{
+	margin: 10px 30px 20px 70px;
+}/*index.html. Förändra id article_two p area*/
+
+#nyhet_contents{
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 0 30px;
+}/*nyhet.html sheet. flex-box(parents)*/
+
+.container {
+	display: flex;
+	background-color: #333333;
+	border: 3px solid red;
+}/*nyhet.html sheet. flex-box(child)*/
+
+#nyhet_aside{
+	padding: 45px 20px 30px 0;
+}/*nyhet.html sheet. adjust nyhet_aside*/
+
+#nyhet_aside img{
+	padding: 45px 20px 30px 0;
+}/*nyhet.html sheet. adjust nyhet_aside*/
+
+.table {
+	border-radius: 30px;
+	margin-left: 10px;
+}/*nyhet.html sheet.Fotoets hörn blir rundade
+(border-radius)*/
+
+.wrapper_meny{
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/*Att ordna 3 foton i rad*/
+	grid-template-rows: 250px;
+	grid-gap: 10px;
+}/*meny.html. För skapa meny grid.*/
+
+.meny_item {
+	grid-template-rows: 200px 200px;
+	/*size of the cake's pictures*/
+	padding-left: 20px;
+}/*meny.html.*/
+
+.meny_item p {
+	margin-top: 0;
+}/*meny.html.*/
+
+#wedding_all {
+	display: flex;
+	margin: 0 0 0 30px;
+}/*wedding.html.*/
+
+.wedding_nav ul {
+	display: flex;
+	flex-direction: column;
+}/*wedding.html.*/
+
+figure {
+	justify-content: center;
+}/*wedding.html.Centrera fotot*/
+
+.wedding_menu {
+	display: flex;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 0;
+	justify-content: center;
+}/*wedding.html.I put two photos side by side
+ in a column to row because of class="wedding_main".*/
+
+.wedding_main {
+width: 75%;
+}/*wedding.html.*/
+
+.wedding_main p {
+	margin-top: 0;
+}/*wedding.html.*/
+
+#wedding_top {
+	margin-bottom: 0;
+}/*wedding.html.*/
+
+.wedding_main h2 {
+	margin-bottom: 10px;
+}/*wedding.html.*/
+
+.wedding_h2 {
+text-align: center;
+}/*wedding.html.*/
+
+.wedding_picture2 {
+	margin-top: 0 ;
+}/*wedding.html.*/
+
+#cc_p {
+	text-align: center;
+}/*wedding.html.Visa CC-licence credit på center*/
+
+.link_top {
+	margin-left: 30px;
+}/*wedding.html Link to top*/
+
+.kontakta_oss {
+	text-align: center;
+} /*kontakt.html <h2>och<p>tag till center*/
+
+span {
+	color: #ff0000;
+}/*kontakt.html. Ändra ”*” in form till rött*/
+
+form {
+	width: 50%;
+	display: grid;
+	grid-template-columns:  1fr;
+	grid-gap: 20px;
+	}/*kontakt.html width:50% är half of screen
+	 Display label➡︎input,line by line.*/
+
+label {
+	font-size: 1.125rem;
+	margin: 0 0 5px 320px;
+	}/*kontakt.html label size */
+
+input[type="text"],
+input[type="email"],
+textarea {
+	background: rgba(255,255,255,0.5);
+	border: 1px #fff solid;
+	margin: 0 0 5px 320px;
+	font-size: 1.5rem;
+}/*kontakt.html. size&färg osv*/
+
+input[type="text"],
+input[type="email"]{
+	width: 100%;
+	max-width: 480px;
+	height: 3rem;
+}/*kontakt.html*/
+
+textarea {
+	width: 100%;
+	max-width: 480px;
+	height: 12rem;
+}/*kontakt.html*/
+
+input[type="submit"] {
+	cursor:pointer;
+	line-height: 1;
+	width: 50%;
+	height: 6rem;
+	font-size: 30px;
+	background-color: #20B2AA;
+	/*Contrast Ratio är 8.01:1,det är bra.*/
+	border-radius: 10px;
+	margin-left: 400px;
+} /*kontakt.html*/
+
+input[type="submit"]:hover {
+	background-color: #008080;
+}/*kontakt.html. The color changes when the
+	user hovers the mouse.*/
+
+/*För Kindle*/
+@media screen and (max-width: 800px){
+	body {
+		background-color: #ffe6ea;
+		min-height: 100vh;
+		position: relative;/*←Krävs för att fixa
+		 sidfoten längst ner på skärmen.(parents)*/
+    	padding-bottom: 120px;/*footer height*/
+    	box-sizing: border-box;/*Krävs för att fixa
+    	sidfoten längst ner på skärmen.(parents)*/
+	}/*max-width: 800px*/
+
+	footer {
+	width: 100%;
+	position: absolute;/*absolute posion for footer*/
+    bottom: 0; /*To fix the footer at the bottom of
+	the screen.*/
+	}/*max-width: 800px*/
+
+	small .copyright{
+		color: black;
+	}
+
+	main {
+		width: 90%;
+	}/*(max-width: 800px)*/
+
+	#nyhet_contents {
+		display: flex;
+		flex-direction: column-reverse;
+	}/*(max-width: 800px),Use "column-reverse"
+	to arrange the content vertically and display
+	 the list on the right side of the screen first.*/
+
+	.wrapper_meny {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 200px;
+	}/*(max-width: 800px),Att visa kakorna en efter en*/
+
+	#wedding_all {
+		display: flex;
+		flex-direction: column-reverse;
+	}/*(max-width: 800px),I used "column-reverse"
+	 to display the navigation list on the right
+	 side of the screen first.*/
+
+	.wedding_menu {
+		display: flex;
+		flex-direction: column;
+	}/*(max-width: 800px),vertically*/
+
+	.wedding_main {
+		justify-content: center;
+		margin-left: 50px;
+	}/*(max-width: 800px),adjust*/
+
+	.wedding_nav {
+		justify-content: center;
+	}/*(max-width: 800px),adjust*/
+
+	img {
+		max-width : 100% ;
+		height : auto ;
+		}/*(max-width: 800px),Jag justerade
+		 fotot eftersom det var utanför skärmen.*/
+
+	form {
+		display: grid;
+		grid-gap: 10px;
+	}/*@media max-width: 800px/kontakt.html. Grid(Parents)
+	The grid can be easily arranged vertically.*/
+
+	label {
+		margin-left: 170px;
+	}/*@media max-width: 800px/kontakt.html,adjust*/
+
+	input[type="text"], input[type="email"], textarea {
+		width: 80%;
+		margin-left: 170px;
+		min-width: 320px;
+	} /*@media max-width: 800px/kontakt.html*/
+
+	input[type="submit"] {
+		width: 60%;
+		margin-left: auto;
+	}/*@media max-width: 800px/kontakt.html
+	,Gjort stort för enkel visning*/
+}/*@media screen and (max-width: 800px) för Kindle*/
+
+/*för iPad*/
+@media screen and (max-width: 768px) {
+	body {
+		background-color: #ffe6ea;
+		min-height: 100vh;
+	}/*max-width: 768px,Visa bild för att fylla skärmen*/
+
+	footer {
+	text-align: center;
+	position: absolute;/*A child for a <body> tag
+	(parent). To fix the footer at the bottom of
+	the screen.*/
+    bottom: 0; /*To fix the footer at the bottom of
+	the screen.*/
+    /*max-width: 768px*/
+	}
+
+	main {
+		width: 100%;
+	}/*@media max-width: 768px.*/
+
+
+	aside {
+		flex-wrap: wrap;
+		max-width: 100%;
+		height: auto;
+	}/*@media　768px,sidebar, Wrap and display*/
+
+	#section_one {
+		flex-wrap: wrap;
+		max-width: 100%;
+		justify-content: center;
+	}/*@media max-width: 768px/index.html,Wrap and display*/
+
+	#container {
+		flex-wrap: wrap;
+		max-width: 100%;
+		margin-left: 0;
+	}/*@media max-width: 768px/nyhet.html,Wrap and display*/
+
+	#nyhet_aside {
+		margin-left: 0;
+	}/*@media max-width: 768px,adjust*/
+
+	.wrapper_meny {
+		flex-wrap: wrap;
+		max-width: 100%;
+		margin-left: 0;
+	}/*@media max-width: 768px/nyhet.html,Wrap and display**/
+
+	.wedding_main {
+		flex-wrap: wrap;
+		max-width: 100%;
+	}/*@media max-width: 768px/wedding.html,Wrap and display**/
+
+	#kontakt_media_query {
+		flex-wrap: wrap;
+		max-width: 100%;
+	}/*@media max-width: 768px/kontakt.html,Wrap and display**/
+
+	label {
+		display: grid;
+		margin: 0 0 5px 160px;
+	}/*@media max-width: 768px/kontakt.html,
+	The grid is easy to lay out. Here, they
+	are arranged vertically.*/
+
+	input[type="text"], input[type="email"], textarea {
+		display: grid;
+		margin: 0 0 5px 160px;
+	} /*@media max-width: 768px/kontakt.html*/
+
+	input[type="submit"] {
+		margin-left: 300px;
+	}/*@media max-width: 768px.*/
+
+	.obligatorisk {
+		display: flex;
+		flex-direction: row;
+	}/*@media max-width: 768px,
+	To line up '*' 'email' '*' and 'essentials' that
+	have become vertically aligned by using <span>.*/
+
+	img {
+		max-width : 100% ;
+		height : auto ;
+		}/*Jag justerade
+		 fotot eftersom det var utanför skärmen.*/
+}/*@media max-width: 768px för iPad*/
+
+
+/*för iPhone eller smaller device*/
+@media screen and (max-width: 425px) {
+	body {
+		background-color: #ffe6ea;
+		position: relative;/*Krävs för att
+		 fixa sidfoten längst ner på skärmen.(parents)*/
+		padding-bottom: 120px;/*footer height*/
+   		box-sizing: border-box;/*Krävs för att fixa
+   		sidfoten längst ner på skärmen.(parents)*/
+	}
+
+	footer {
+	text-align: center;
+	position: absolute;/*A child for a <body> tag
+	(parent). To fix the footer at the bottom of
+	the screen.*/
+    bottom: 0; /*To fix the footer at the bottom of
+	the screen.*/
+    padding: 30px 0;
+}
+
+	main {
+		width: 100%;
+		min-height: 100vh;
+	}/*@media max-width: 425px,
+	Visa bild för att fylla skärmen*/
+
+	h1 {
+		font-size: 3em;
+	}/*@media max-width: 425px*/
+
+	nav ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}/*@media max-width: 425px,
+	Ordna navigationen vertikalt*/
+
+	#article_one p {
+		width: 100%;
+		padding-left: 0;
+	}/*@media max-width: 425px/index.html,adjust*/
+
+	aside {
+		max-width: 100%;
+		height: auto;
+	}/*@media max-width: 425px,sidebar*/
+
+	#section_one {
+		flex-wrap: wrap;
+		max-width: 100%;
+		justify-content: center;
+	}/*@media max-width: 425px/index.html,
+	Wrap and display*/
+
+	#bg_mask {
+		background: rgba(255,255,255,0.5);
+		color: #000000;
+	}/*@media max-width: 425px/index.html.
+	Eftersom bakgrunden är vitaktig har jag lagt till
+	transparens för att göra titeln lättare att se.
+*/
+	#container {
+		flex-wrap: wrap;
+		max-width: 100%;
+		margin-left: 0;
+	}/*@media max-width: 425px/nyhet.html,
+	Wrap and display*/
+
+	#nyhet_contents {
+		display: flex;
+		flex-direction: column-reverse;
+		/*För att visa navigationen först*/
+		margin-right: 15px;
+	}/*@media max-width: 425px/nyhet.html*/
+
+	.wrapper_meny {
+		display: grid;
+		grid-template-columns: 1fr;
+		/*Display cakes one by one*/
+		max-width: 100%;
+		margin-left: 0;
+	}/*@media max-width: 425px/,meny.html*/
+
+	.wedding_main {
+		flex-wrap: wrap;
+		max-width: 100%;
+	}/*@media max-width: 425px/wedding.html,
+	Wrap and display*/
+
+	.wedding_menu {
+		display: flex;
+		flex-direction: column;
+	}/*@media max-width: 425px/wedding.html,
+	Display vertically*/
+
+	#wedding_all {
+		display: flex;
+		flex-direction: column-reverse;
+	}/*@media max-width: 425px/wedding.html,
+	I used "column-reverse" to display the navigation
+	 list on the right side of the screen first.*/
+
+	#kontakt_media_query {
+		flex-wrap: wrap;
+		max-width: 100%;
+	}/*@media max-width: 425px/kontakt.html,
+	Wrap and display*/
+
+	form {
+		display: grid;
+		grid-gap: 10px;
+	}/*@media max-width: 425px/kontakt.html.
+	 Grid(Parents)*/
+
+	label {
+		margin-left: 10px;
+	}/*@media max-width: 425px/kontakt.html,adjust*/
+
+	input[type="text"], input[type="email"], textarea {
+		width: 80%;
+		margin-left: 15px;
+		min-width: 320px;
+	} /*@media max-width: 425px/kontakt.html,adjust*/
+
+	input[type="submit"] {
+		width: 40%;
+		margin-left: auto;
+	}/*@media max-width: 425px/kontakt.html,adjust size*/
+
+	img {
+		max-width : 100% ;
+		height : auto ;
+		}/*@media max-width: 425px,
+		Jag justerade
+		 fotot eftersom det var utanför skärmen.*/
+
+}/*för iPhone eller smaller device*/

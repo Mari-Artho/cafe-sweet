@@ -1,0 +1,71 @@
+<!DOCTYPE html><!--Deklaration for HTML5-->
+<html lang="sv"><!--Välj language-->
+  <head>
+  	<meta charset="utf-8"><!--För att charakter-->
+    <meta name="description" content="Konditori Sött&Elegant"><!--En beskrivning av denna sida. Den del som visas med sidrubriken i sökmotorn. Skriv nyckelord.-->
+  	<meta name="viewport" content="width=device-width  initial-scale=1.0"><!--För använda Media-query-->
+
+    <title>Konditori Sött&Elegant</title><!--Title-->
+  	
+  	<link type="text/css" rel="stylesheet" href="style.css"><!--Deklaration för använda css -->
+  	<link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--För att använda Google font-->
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"><!--För att använda Google font-->
+  </head>
+
+  <body><!--Vad jag skriver inuti kroppen visas på skärmen.-->
+    
+      <main>
+        <header id="kontakt_image"><!--insert background image in the 'header'-->
+          <div class="bg_mask"><!--För att göra bakgrundsbilden transparent med CSS.Det var vackrare att göra det transparent.-->
+          <h1 class="kontakt_text">Kontakt</h1>
+          </div>
+        </header>
+
+      <nav><!--navigation's list-->
+        <ul><!--List of the navigation-->
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="nyhet.html">Nyhet</a></li>
+          <li><a href="meny.html">Meny</a></li>
+          <li><a href="wedding.html">Bröllop</a></li>
+          <li><a href="kontakt.html" class="current">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <hr>　<!--Border-->
+
+    <div id="kontakt_media_query"><!--För responsive på CSS-->
+    <div class="kontakta_oss"><!--class för Namn,address och phone på form.-->
+      <h2>Kontakta Oss</h2>
+      <h3>Konditori Sött&Elegant </h3>
+      <p>Karlavägen 36, 114 49 Stockholm</p>
+      <p>08-1234-5678</p>
+    </div>
+
+    <form action="#"><!--När PHP inte används, placera # inom action="#".-->
+      <div>
+        <label id="name">Namn</label><!--In the textbook shows that 
+        <label for="name">Namn</label>
+         but I used the 'id' because an error occurred in the verification.-->
+        <input type="text" name="name">
+      </div>
+
+      <div><!--Enclosing the label and input field with <div> tag makes it easier to lay out with CSS.-->
+        <label class="obligatorisk" id="email"><span>*</span>E-post ( <span> * </span> är obligatorisk)</label><!--'*' Är bra eftersom det sticker ut när det är rött.--><!--In the textbook shows that <label for="email">E-post</label> but I used the 'id' because an error occurred in the verification.-->
+        <input type="email" name="email" required>
+      </div><!--'required' vissa skärmar "inte input" när de inte input in.-->
+
+      <div>
+        <label id="message">Meddelande</label>
+        <!--In the textbook shows that <label for="message">Meddelande</label> but I used the 'id' because an error occurred in the verification.-->
+        <textarea name="message"></textarea>
+      </div>
+      <input type="submit" value="Skicka"><!--skappa 'skocka' bottum-->
+    </form>
+    </div><!--row36 kontakt_media_query close tab-->
+    </main>
+
+    <footer><small>Copyright © Mari Artho All Rights Reserved.</small></footer> <!--<small> taggar är taggar som anger kommentarer som ansvarsfriskrivning och upphovsrätt.-->
+
+  </body>
+
+</html>
